@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Explorer - Ultimate Space Experience</title>
+    <style>
+        /* Universal Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle, #000, #1a1a1a);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(90deg, #1a1a1a, #000);
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            text-shadow: 0 0 20px #ff0080, 0 0 60px #7e5c9e;
+        }
+
+        .header p {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: #ddd;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: linear-gradient(90deg, #111, #222);
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s;
+        }
+
+        nav a:hover {
+            background: #ff0080;
+            transform: scale(1.1);
+        }
+
+        /* Main Section */
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem;
+        }
+
+        .main .section {
+            margin: 2rem 0;
+            text-align: center;
+            padding: 3rem;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .main .section h2 {
+            font-size: 2.5rem;
+            color: #ff0080;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px #ff0080, 0 0 30px #7e5c9e;
+        }
+
+        /* Black Hole Explorer */
+        .black-hole {
+            background: url('https://source.unsplash.com/1600x900/?blackhole') center/cover no-repeat;
+            height: 400px;
+            border-radius: 15px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        /* Astronaut Profiles */
+        .astronauts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .astronaut-card {
+            background: rgba(0, 0, 0, 0.8);
+            margin: 1rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            width: 280px;
+            text-align: center;
+        }
+
+        /* Cosmic Events */
+        .cosmic-events {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* Interstellar Travel Simulator */
+        .travel-simulator {
+            text-align: center;
+        }
+
+        .travel-simulator input {
+            padding: 0.5rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+
+        /* Alien Life Theories */
+        .alien-life {
+            text-align: center;
+        }
+
+        /* Space Trivia Game */
+        .space-trivia {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Galactic Explorer</h1>
+        <p>Journey Beyond the Solar System</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#black-hole">Black Holes</a>
+        <a href="#astronauts">Astronauts</a>
+        <a href="#cosmic-events">Events</a>
+        <a href="#travel-simulator">Travel</a>
+        <a href="#alien-life">Aliens</a>
+        <a href="#space-trivia">Trivia Game</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <section class="section" id="black-hole">
+            <h2>Black Hole Explorer</h2>
+            <div class="black-hole">Discover the mysteries of black holes!</div>
+        </section>
+
+        <section class="section" id="astronauts">
+            <h2>Legendary Astronauts</h2>
+            <div class="astronauts">
+                <div class="astronaut-card"><h3>Neil Armstrong</h3><p>First person on the Moon</p></div>
+                <div class="astronaut-card"><h3>Sally Ride</h3><p>First American woman in space</p></div>
+                <div class="astronaut-card"><h3>Chris Hadfield</h3><p>Commander of ISS</p></div>
+            </div>
+        </section>
+
+        <section class="section" id="cosmic-events">
+            <h2>Upcoming Cosmic Events</h2>
+            <p>Stay tuned for meteor showers, eclipses, and rocket launches!</p>
+        </section>
+
+        <section class="section" id="travel-simulator">
+            <h2>Interstellar Travel Simulator</h2>
+            <input type="number" placeholder="Enter Distance (light-years)">
+            <button>Calculate Travel Time</button>
+        </section>
+
+        <section class="section" id="alien-life">
+            <h2>Alien Life Theories</h2>
+            <p>Explore the Drake Equation, Fermi Paradox, and UFO phenomena!</p>
+        </section>
+
+        <section class="section" id="space-trivia">
+            <h2>Space Trivia Game</h2>
+            <button>Start Quiz</button>
+        </section>
+    </main>
+</body>
+</html>
